@@ -1,8 +1,21 @@
+<style>
+
+form{
+    background:#DCDCDC;
+    width:400px;
+    margin-top:50px;
+    padding:10px;
+    margin-bottom:50px;
+}
+</style>
+<h1>Cree registro de vehiculo:</h1>
 <%= form_for @vehicle, :html =>{:class => "form"}, remote: true do |f| %>
     <div class="form-group">
+    <%= f.label :plate %>:
       <%= f.text_field :plate, class:"form-control"  %>
     </div>
     <div class="form-group">
+    <%= f.label :type_vehicle %>:
       <%= f.text_field :type_vehicle, class:"form-control" %>
     </div>
 

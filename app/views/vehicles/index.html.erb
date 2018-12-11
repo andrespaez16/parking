@@ -1,11 +1,31 @@
-<h1>hola mundo</h1> 
+
 <div class="col-lg-12">
+<h1>App parking:</h1> 
   <%= render partial: 'form'%>
 </div>
-<h1>Lista de vehiculos en el parqueadero:</h1>
-<br>
-<ul>
-<% @vehicles.each do |vehiculo|%>
-<li> Placa del vehiculo :<%=vehiculo.plate%>  Tarifa :$<%=vehiculo.type_vehicle %></li>
- <%end%>   
-<ul>
+<div class="col-lg-12">
+    <h1>Lista de vehiculos en el parqueadero:</h1>
+    <div class="row">
+    <div class="col-lg-6">
+        <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Plate</th>
+            <th>Type of Vehicle</th>
+            <th>Date of Create</th>
+
+        </thead>
+            <tbody class="post-title">
+            <%@vehicles.each do |vehiculo|%>
+            <tr>
+                <td><%=vehiculo.id%></td>
+                <td><%=vehiculo.plate%></td>
+                <td><%=vehiculo.type_vehicle%></td>
+                <td><%=vehiculo.created_at%></td>
+
+            </tr>
+            <%end%>
+            </tbody>
+        </table>
+        </div>  
+ </div>
