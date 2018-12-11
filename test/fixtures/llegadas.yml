@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  estado: false
+  id_vehiculo: 1
+
+two:
+  estado: false
+  id_vehiculo: 1

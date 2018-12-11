@@ -1,0 +1,2 @@
+class LlegadasController < ApplicationController
+end

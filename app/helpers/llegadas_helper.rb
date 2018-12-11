@@ -1,0 +1,2 @@
+module LlegadasHelper
+end
