@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  plate: MyString
   estado: false
-  id_vehiculo: 1
+  type_vehicle: MyString
 
 two:
+  plate: MyString
   estado: false
-  id_vehiculo: 1
+  type_vehicle: MyString

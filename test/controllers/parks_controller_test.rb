@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class LlegadaTest < ActiveSupport::TestCase
+class ParksControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

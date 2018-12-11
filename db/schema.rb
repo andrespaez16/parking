@@ -10,18 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_11_043208) do
+ActiveRecord::Schema.define(version: 2018_12_11_171519) do
 
-  create_table "llegadas", force: :cascade do |t|
-    t.boolean "estado"
-    t.integer "id_vehiculo"
+  create_table "parks", force: :cascade do |t|
+    t.integer "fare_moto"
+    t.integer "fare_car"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "vehiculos", force: :cascade do |t|
-    t.integer "tarifa"
-    t.string "placa"
+  create_table "vehicles", force: :cascade do |t|
+    t.string "plate"
+    t.boolean "estado"
+    t.string "type_vehicle"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
